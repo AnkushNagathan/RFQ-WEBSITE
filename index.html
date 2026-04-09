@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honeycomb AI — Never Lose a Bid to a Slow Quote</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══ NAV ══════════════════════════════════════════════ -->
+  <header class="nav">
+    <div class="nav-left">
+      <div class="hc-logo">
+        <div class="hc-logo-box"></div>
+        <div class="hc-logo-glow"></div>
+        <svg class="hc-logo-hex" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.5 3.5L22 12l-4.5 8.5h-11L2 12l4.5-8.5h11z" />
+        </svg>
+      </div>
+      <span class="nav-brand">HONEYCOMB AI</span>
+    </div>
+    <div class="nav-pill">
+      VIEWING: <span id="nav-audience" class="nav-audience">SUPPLIER</span>
+    </div>
+    <a href="#access" class="nav-cta">GET EARLY ACCESS</a>
+  </header>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-top">
+        <div class="hero-kicker">
+          <span class="kicker-dot"></span>
+          Manufacturing intelligence · Early access open
+        </div>
+        <h1 class="hero-h1">
+          NEVER LOSE<br>
+          A BID TO A<br>
+          <span class="hero-accent">SLOW QUOTE.</span>
+        </h1>
+        <p class="hero-sub">
+          RFQs are not documents. They are chains of decisions — requirements, feasibility,
+          capability, supplier coordination, and quote consolidation. That chain still runs
+          on people, email, and spreadsheets. Honeycomb automates it. For both sides.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AUDIENCE PICKER ═══════════════════════════════════ -->
+  <section class="picker">
+    <p class="picker-label">— WHO ARE YOU? PICK YOUR SIDE —</p>
+    <div class="picker-cards">
+      <button class="picker-card" data-side="buyer">
+        <div class="picker-card-top">
+          <span class="picker-tag">OEM · MID-TIER MANUFACTURER</span>
+          <span class="picker-arrow">→</span>
+        </div>
+        <div class="picker-title">You send drawings.</div>
+        <p class="picker-body">You issue RFQs, chase supplier responses, compare quotes in spreadsheets, and manage cost drift manually. Honeycomb automates the entire sourcing cycle.</p>
+      </button>
+      <button class="picker-card active" data-side="supplier">
+        <div class="picker-card-top">
+          <span class="picker-tag">TIER 2 · TIER 3 SUPPLIER</span>
+          <span class="picker-arrow">→</span>
+        </div>
+        <div class="picker-title">You receive drawings.</div>
+        <p class="picker-body">You quote on drawings, win jobs on speed and accuracy, and manage sub-suppliers below. Honeycomb reads the drawing and structures your quote before competitors do.</p>
+      </button>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 01 · PROBLEM ══════════════════════════════ -->
+  <section class="lp-section problem-section">
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <div class="section-header-right">
+        <div class="section-tag">THE PROBLEM</div>
+        <h2 class="section-h2" id="prob-title"></h2>
+        <p class="section-lead" id="prob-lead"></p>
+      </div>
+    </div>
+    <div class="prob-grid" id="prob-list"></div>
+    <div class="metrics-row" id="metrics"></div>
+  </section>
+
+  <!-- ═══ SECTION 02 · PROCESS ══════════════════════════════ -->
+  <section class="lp-section process-section">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <div class="section-header-right">
+        <div class="section-tag">THE PROCESS</div>
+        <h2 class="section-h2" id="proc-title"></h2>
+        <p class="section-lead" id="proc-lead"></p>
+      </div>
+    </div>
+    <div class="steps-grid" id="steps"></div>
+  </section>
+
+  <!-- ═══ SECTION 03 · CAPABILITIES ════════════════════════ -->
+  <section class="lp-section cap-section">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <div class="section-header-right">
+        <div class="section-tag">CAPABILITIES</div>
+        <h2 class="section-h2" id="cap-title"></h2>
+        <p class="section-lead" id="cap-lead"></p>
+      </div>
+    </div>
+    <div class="bento" id="cap-grid"></div>
+    <div class="stack-strip">
+      <span>INTEGRATES WITH →</span>
+      <span>SAP</span><span>ORACLE</span><span>EPICOR</span>
+      <span>INFOR</span><span>REST API</span><span>CSV / EXCEL</span>
+    </div>
+  </section>
+
+  <!-- ═══ DYNAMIC COMPOUND SECTION ══════════════════════════ -->
+  <section class="lp-section compound-section">
+    <div class="compound-header">
+      <h2 class="compound-h2" id="compound-title"></h2>
+      <p class="compound-lead" id="compound-lead"></p>
+    </div>
+    <div class="phases" id="compound-phases"></div>
+  </section>
+
+  <!-- ═══ SECTION 04 · PARTNER EARLY ══════════════════════════ -->
+  <section class="lp-section access-section" id="access">
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <div class="section-header-right">
+        <div class="section-tag">EARLY ACCESS</div>
+        <h2 class="section-h2" id="access-title">Partner early. <em>Compound faster.</em></h2>
+      </div>
+    </div>
+    <div class="access-simple">
+      <p class="access-para" id="access-para1"></p>
+      <p class="access-para" id="access-para2"></p>
+      <div class="access-journey" id="access-journey"></div>
+      <div id="access-btn-root"></div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="hc-logo hc-logo--sm">
+        <div class="hc-logo-box"></div>
+        <svg class="hc-logo-hex" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.5 3.5L22 12l-4.5 8.5h-11L2 12l4.5-8.5h11z" />
+        </svg>
+      </div>
+      <div>
+        <div class="footer-brand">HONEYCOMB AI</div>
+        <div class="footer-tag">Never lose a bid to a slow quote.</div>
+      </div>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:hello@honeycomb.ai">hello@honeycomb.ai</a>
+      <a href="#">LinkedIn ↗</a>
+    </div>
+  </footer>
+
+  <script src="book-demo-button.bundle.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -14,8 +14,8 @@
   --font-body:    "DM Sans", sans-serif;
   --font-mono:    "Space Mono", monospace;
 
-  --max: 1080px;
-  --pad: 2rem;
+  --max: 1480px;
+  --pad: clamp(1.2rem, 3vw, 3rem);
 }
 
 /* ─── RESET ────────────────────────────────────────────────── */
@@ -34,7 +34,8 @@ button { font: inherit; background: none; border: none; cursor: pointer; padding
 
 /* ─── LAYOUT ────────────────────────────────────────────────── */
 .lp-section {
-  max-width: var(--max);
+  width: 100%;
+  max-width: min(var(--max), 100%);
   margin: 0 auto;
   padding: 6rem var(--pad);
   border-top: 1px solid var(--border);
@@ -133,7 +134,8 @@ button { font: inherit; background: none; border: none; cursor: pointer; padding
   border-bottom: 1px solid var(--border);
 }
 .hero-inner {
-  max-width: var(--max);
+  width: 100%;
+  max-width: min(var(--max), 100%);
   margin: 0 auto;
   padding: 5rem var(--pad) 5rem;
 }
@@ -199,7 +201,8 @@ button { font: inherit; background: none; border: none; cursor: pointer; padding
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  max-width: var(--max);
+  width: 100%;
+  max-width: min(var(--max), 100%);
   margin: 0 auto;
 }
 .picker-card {
@@ -622,7 +625,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; padding
   padding-bottom: 8rem;
 }
 .access-simple {
-  max-width: 52rem;
+  max-width: 68rem;
 }
 .access-para {
   font-size: 1.05rem;
